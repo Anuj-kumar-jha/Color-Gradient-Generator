@@ -11,10 +11,10 @@
         <button id="myButton1">#051937</button>
         <button id="myButton2">#008793</button>
     </section>
-    <!-- <div class="copyCode"></div> -->
+    <div class="copyCode"></div>
 
     <script>
-        let btn1 = document.getElementById("myButton");
+        let btn1 = document.getElementById("myButton1");
         let btn2 = document.getElementById("myButton2");
         let copyDiv = document.querySelector(".copyCode");
 
@@ -39,12 +39,14 @@
             let rgb1 = hexValues();
             let rgb2 = hexValues();
             console.log(rgb1, rgb2);
-            document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            copyDiv.innerHTML = `background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
+            document.body.style.backgroundImage = `linear-gradient(to left, ${rgb1}, ${rgb2})`;
+            copyDiv.innerHTML = `background-image: linear-gradient(to left, ${rgb1}, ${rgb2})`;
         };
 
         btn1.addEventListener("click", handleButton1);
         btn2.addEventListener("click", handleButton2);
     </script>
+
+
 </body>
 </html>

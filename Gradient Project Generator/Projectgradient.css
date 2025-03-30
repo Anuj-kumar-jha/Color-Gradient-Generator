@@ -5,5 +5,9 @@
 
 section{
     text-align: center;
-    padding-top: 5 0vh;  
+    padding-top: 50vh;  
+}
+.copyCode{
+    text-align: center;
+    font-size: 30px;
 }
